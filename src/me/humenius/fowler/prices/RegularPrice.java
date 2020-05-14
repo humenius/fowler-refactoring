@@ -2,11 +2,6 @@ package me.humenius.fowler.prices;
 
 public class RegularPrice extends Price {
     @Override
-    public int getPriceCode() {
-        return PriceCode.REGULAR.getValue();
-    }
-
-    @Override
     public double getCharge(int daysRented) {
         double total = 2.0;
 

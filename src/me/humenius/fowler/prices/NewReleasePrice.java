@@ -2,12 +2,12 @@ package me.humenius.fowler.prices;
 
 public class NewReleasePrice extends Price {
     @Override
-    public int getPriceCode() {
-        return PriceCode.NEW_RELEASE.getValue();
+    public double getCharge(int daysRented) {
+        return (daysRented * 3);
     }
 
     @Override
-    public double getCharge(int daysRented) {
-        return (daysRented * 3);
+    public int getFrequentRenterPoints(int daysRented) {
+        return (daysRented > 1) ? 2 : 1;
     }
 }

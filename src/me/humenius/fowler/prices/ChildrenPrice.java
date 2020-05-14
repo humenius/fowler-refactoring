@@ -2,11 +2,6 @@ package me.humenius.fowler.prices;
 
 public class ChildrenPrice extends Price {
     @Override
-    public int getPriceCode() {
-        return PriceCode.CHILDREN.getValue();
-    }
-
-    @Override
     public double getCharge(int daysRented) {
         double total = 1.5;
 

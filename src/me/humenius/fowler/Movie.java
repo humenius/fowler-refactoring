@@ -1,29 +1,22 @@
 package me.humenius.fowler;
 
-public class Movie implements Price {
-    private final String title;
-    private final PriceCode priceCode;
+import me.humenius.fowler.prices.Price;
 
-    Movie(String title, PriceCode priceCode) {
+public class Movie extends Price {
+    private final String title;
+    private final Price price;
+
+    Movie(String title, Price price) {
         this.title = title;
-        this.priceCode = priceCode;
+        this.price = price;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public PriceCode getPriceCode() {
-        return priceCode;
-    }
-
     @Override
-    public double getCharge() {
-        return 0;
-    }
-
-    @Override
-    public int getFrequentRenterPoints() {
-        return 0;
+    public double getCharge(int daysRented) {
+        return price.getCharge(daysRented);
     }
 }
