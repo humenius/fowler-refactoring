@@ -1,9 +1,9 @@
-package me.humenius.fowler;
+package me.humenius.fowler.prices;
 
 public abstract class Price {
-    abstract int getPriceCode();
+    public abstract int getPriceCode();
 
-    abstract double getCharge(int daysRented);
+    public abstract double getCharge(int daysRented);
 
     int getFrequentRenterPoints(int daysRented) {
         return 1;
