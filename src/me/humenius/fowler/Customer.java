@@ -3,6 +3,10 @@ package me.humenius.fowler;
 import java.lang.*;
 import java.util.*;
 
+/**
+ * <h1>Customer</h1>
+ * <p>Representation of a possible customer.</p>
+ */
 class Customer {
     private final String name;
     private List<Rental> rentals = new ArrayList<>();
@@ -11,6 +15,9 @@ class Customer {
         this.name = name;
     }
 
+    /**
+     * @param   rental  Movie to add to one customer's rental list
+     */
     public void addRental(Rental rental) {
         rentals.add(rental);
     }
@@ -19,6 +26,9 @@ class Customer {
         return name;
     }
 
+    /**
+     * @return  A statement including all rented movies, their charges and total possible earned frequent renter points.
+     */
     public String getStatement() {
         StringBuilder statement = new StringBuilder();
         statement.append("Rental Record for ")
