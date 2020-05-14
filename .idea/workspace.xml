@@ -40,6 +40,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1589456440959">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456440959" />
     <state x="1909" y="190" key="SettingsEditor" timestamp="1589456283448">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
@@ -48,5 +52,9 @@
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="2093" y="384" key="com.intellij.ide.util.TipDialog/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456248832" />
+    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog" timestamp="1589456446434">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456446434" />
   </component>
 </project>
