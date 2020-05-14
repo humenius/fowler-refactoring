@@ -4,22 +4,56 @@ import java.lang.*;
 import java.util.*;
 
 class Customer {
-    private String name;
-    private Vector rentals = new Vector();
+    private final String name;
+    private List<Rental> rentals = new ArrayList<>();
 
-    public Customer(String newname) {
-        name = newname;
+    Customer(String name) {
+        this.name = name;
     }
 
-    public void addRental(Rental arg) {
-        rentals.addElement(arg);
+    public void addRental(Rental rental) {
+        rentals.add(rental);
     }
 
     public String getName() {
         return name;
     }
 
-    public String statement() {
+    public String getStatement() {
+        StringBuilder statement = new StringBuilder();
+        statement.append("Rental Record for ")
+                 .append(getName())
+                 .append("\n\t")
+                 .append("Title")
+                 .append("\t\t")
+                 .append("Days")
+                 .append('\t')
+                 .append("Amount")
+                 .append('\n');
+
+        for (Rental rental : rentals) {
+            statement.append('\t')
+                     .append(rental.getMovie()
+                                   .getTitle())
+                     .append('\t')
+                     .append('\t')
+                     .append(rental.getDaysRented())
+                     .append('\t')
+                     .append('\t')
+                     .append(rental.getCharge())
+                     .append('\n');
+        }
+
+        statement.append("Amount owed is ")
+                 .append(getTotalCharge())
+                 .append('\n')
+                 .append("You earned ")
+                 .append(getTotalFrequentRenterPoints())
+                 .append(" frequent renter points");
+
+        return statement.toString();
+    }
+/*    public String getStatement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration enum_rentals = rentals.elements();
@@ -47,29 +81,26 @@ class Customer {
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
         result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points";
         return result;
+    }*/
+
+    private double getTotalCharge() {
+        double total = 0.0;
+
+        for (Rental rental : rentals) {
+            total += rental.getCharge();
+        }
+
+        return total;
     }
 
-    private double amountFor(Rental each) {
-        double thisAmount = 0;
-        switch (each.getMovie()
-                    .getPriceCode()) {
-        case Movie.REGULAR:
-            thisAmount += 2;
-            if (each.getDaysRented() > 2) {
-                thisAmount += (each.getDaysRented() - 2) * 1.5;
-            }
-            break;
-        case Movie.NEW_RELEASE:
-            thisAmount += each.getDaysRented() * 3;
-            break;
-        case Movie.CHILDRENS:
-            thisAmount += 1.5;
-            if (each.getDaysRented() > 3) {
-                thisAmount += (each.getDaysRented() - 3) * 1.5;
-            }
-            break;
+    private int getTotalFrequentRenterPoints() {
+        int total = 0;
+
+        for (Rental rental : rentals) {
+            total += rental.getFrequentRenterPoints();
         }
-        return thisAmount;
+
+        return total;
     }
 }
     

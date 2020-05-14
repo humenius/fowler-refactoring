@@ -1,29 +1,29 @@
 package me.humenius.fowler;
 
-public class Movie {
-    public static final int CHILDRENS = 2;
-    public static final int REGULAR = 0;
-    public static final int NEW_RELEASE = 1;
+public class Movie implements Price {
+    private final String title;
+    private final PriceCode priceCode;
 
-    private String title;
-    private int priceCode;
-
-    public Movie(String newtitle, int newpriceCode) {
-        title = newtitle;
-        priceCode = newpriceCode;
-    }
-
-    public int getPriceCode() {
-        return priceCode;
-    }
-
-    public void setPriceCode(int arg) {
-        priceCode = arg;
+    Movie(String title, PriceCode priceCode) {
+        this.title = title;
+        this.priceCode = priceCode;
     }
 
     public String getTitle() {
         return title;
     }
 
-    ;
+    public PriceCode getPriceCode() {
+        return priceCode;
+    }
+
+    @Override
+    public double getCharge() {
+        return 0;
+    }
+
+    @Override
+    public int getFrequentRenterPoints() {
+        return 0;
+    }
 }

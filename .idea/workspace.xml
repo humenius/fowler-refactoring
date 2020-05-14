@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1btf6DlgwDPwYqj9idzMuXt1Nvx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -19,7 +26,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,7 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589456132165</updated>
       <workItem from="1589456135872" duration="89000" />
-      <workItem from="1589456247577" duration="36000" />
+      <workItem from="1589456247577" duration="1340000" />
     </task>
     <servers />
   </component>
@@ -40,21 +47,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1589456440959">
+    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser" timestamp="1589457055034">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456440959" />
-    <state x="1909" y="190" key="SettingsEditor" timestamp="1589456283448">
+    <state x="2213" y="274" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589457055034" />
+    <state x="1909" y="190" key="SettingsEditor" timestamp="1589457610418">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state x="1909" y="190" key="SettingsEditor/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456283448" />
+    <state x="1909" y="190" key="SettingsEditor/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589457610418" />
     <state x="2093" y="384" key="com.intellij.ide.util.TipDialog" timestamp="1589456248832">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="2093" y="384" key="com.intellij.ide.util.TipDialog/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456248832" />
-    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog" timestamp="1589456446434">
+    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog" timestamp="1589457392713">
       <screen x="1440" y="23" width="1920" height="1057" />
     </state>
-    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589456446434" />
+    <state x="2162" y="165" key="refactoring.ChangeSignatureDialog/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589457392713" />
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1589457604089">
+      <screen x="1440" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2065" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1440.821/1440.23.1920.1057@1440.23.1920.1057" timestamp="1589457604089" />
   </component>
 </project>
