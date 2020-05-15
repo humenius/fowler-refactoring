@@ -1,7 +1,5 @@
 package me.humenius.fowler;
 
-import java.lang.*;
-
 import me.humenius.fowler.prices.ChildrenPrice;
 import me.humenius.fowler.prices.NewReleasePrice;
 
@@ -15,7 +13,8 @@ public class Program {
      * This is the main entry point for the application
      */
 
-    public static void main(String args[]) {
+    @SuppressWarnings("java:S106")
+    public static void main(String[] args) {
         String result;
         System.out.println("Welcome to the Movie Store");
         Movie m1 = new Movie("movie1", NewReleasePrice.getInstance());

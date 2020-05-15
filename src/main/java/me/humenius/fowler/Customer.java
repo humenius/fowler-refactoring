@@ -1,6 +1,5 @@
 package me.humenius.fowler;
 
-import java.lang.*;
 import java.util.*;
 
 /**
