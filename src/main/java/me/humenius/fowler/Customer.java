@@ -9,7 +9,7 @@ import java.util.*;
  */
 class Customer {
     private final String name;
-    private List<Rental> rentals = new ArrayList<>();
+    private final List<Rental> rentals = new ArrayList<>();
 
     Customer(String name) {
         this.name = name;
@@ -22,17 +22,13 @@ class Customer {
         rentals.add(rental);
     }
 
-    public String getName() {
-        return name;
-    }
-
     /**
      * @return  A statement including all rented movies, their charges and total possible earned frequent renter points.
      */
     public String getStatement() {
         StringBuilder statement = new StringBuilder();
         statement.append("Rental Record for ")
-                 .append(getName())
+                 .append(name)
                  .append("\n\t")
                  .append("Title")
                  .append("\t\t")
