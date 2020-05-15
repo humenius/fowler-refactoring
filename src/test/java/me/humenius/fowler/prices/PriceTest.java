@@ -7,7 +7,7 @@ import org.junit.Test;
 public class PriceTest {
     @Test
     public void testChildrenPriceCalculation() {
-        Price price = new ChildrenPrice();
+        Price price = ChildrenPrice.getInstance();
         int daysRented = 5;
 
         double actual = price.getCharge(daysRented);
@@ -17,7 +17,7 @@ public class PriceTest {
 
     @Test
     public void testNewReleasePriceCalculation() {
-        Price price = new NewReleasePrice();
+        Price price = NewReleasePrice.getInstance();
         int daysRented = 5;
 
         double actual = price.getCharge(daysRented);
@@ -27,7 +27,7 @@ public class PriceTest {
 
     @Test
     public void testRegularPriceCalculation() {
-        Price price = new RegularPrice();
+        Price price = RegularPrice.getInstance();
         int daysRented = 5;
 
         double actual = price.getCharge(daysRented);

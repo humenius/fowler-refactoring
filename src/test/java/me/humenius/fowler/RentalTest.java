@@ -11,7 +11,7 @@ public class RentalTest {
     @Test
     public void testGetChargeWithNewReleasePrice() {
         int daysRented = 10;
-        Movie movie = new Movie("Test movie with new release pricing", new NewReleasePrice());
+        Movie movie = new Movie("Test movie with new release pricing", NewReleasePrice.getInstance());
         Rental rental = new Rental(movie, daysRented);
 
         double actual = rental.getCharge();
@@ -22,7 +22,7 @@ public class RentalTest {
     @Test
     public void testGetChargeWithChildrenPrice() {
         int daysRented = 5;
-        Movie movie = new Movie("Test movie with children price", new ChildrenPrice());
+        Movie movie = new Movie("Test movie with children price", ChildrenPrice.getInstance());
         Rental rental = new Rental(movie, daysRented);
 
         double actual = rental.getCharge();
