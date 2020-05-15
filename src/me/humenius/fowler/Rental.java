@@ -22,12 +22,12 @@ class Rental {
     }
 
     /**
-     * @return  Return charge of movie based of days rented.
+     * @return  Charge of movie based of days rented.
      */
     public double getCharge() { return movie.getCharge(daysRented); }
 
     /**
-     * @return  Return frequent renter points of movie based of days rented.
+     * @return  Frequent renter points of movie based of days rented.
      */
     public int getFrequentRenterPoints() {
         return movie.getFrequentRenterPoints(daysRented);
