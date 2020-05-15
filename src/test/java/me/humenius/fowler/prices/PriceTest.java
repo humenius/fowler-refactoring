@@ -34,4 +34,24 @@ public class PriceTest {
         double expected = 2.0 + (((double) daysRented) - 2) * 1.5;
         assertEquals(actual, expected);
     }
+
+    @Test
+    public void testRegularPriceFrequentRenterPoints() {
+        Price price = RegularPrice.getInstance();
+        int daysRented = 5;
+
+        int actual = price.getFrequentRenterPoints(daysRented);
+        int expected = 1;
+        assertEquals(actual, expected);
+    }
+
+    @Test
+    public void testNewReleasePriceFrequentRenterPoints() {
+        Price price = NewReleasePrice.getInstance();
+        int daysRented = 5;
+
+        int actual = price.getFrequentRenterPoints(daysRented);
+        int expected = 2;
+        assertEquals(actual, expected);
+    }
 }
